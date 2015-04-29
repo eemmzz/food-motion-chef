@@ -1,4 +1,4 @@
-# kandl-motion-chef
+# food-motion-chef
 *-Cooking mode with leap motion magic!-*
 
 A hack day themed around BBC Food.
