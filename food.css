@@ -1,0 +1,95 @@
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    z-index: 1;
+    border-bottom: solid 2px lime;
+    padding: 12px 22px 16px 22px;
+}
+
+#logo {
+    width: 238px;
+    height: 30px;
+    float: right;
+    border-style: none;
+    margin-top: 8px;
+}
+
+#recipe {
+    float: left;
+}
+
+.background {
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: 100%;
+    padding: 0;
+}
+
+.background::after {
+    content: "";
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    opacity: 0.8;
+    display: block;
+    z-index: 0;
+}
+
+.content {
+    color: white;
+    z-index: 100;
+    position: absolute;
+    top: 68px;
+}
+
+#side-bar {
+    background-image: url('navigation-map.png');
+    height: 710px;
+    width: 345px;
+    float: left;
+    position: relative;
+}
+
+.nav-0 {
+    background-position: 0px -20px;
+}
+
+.nav-1 {
+    background-position: -364px -20px;
+}
+
+.nav-2 {
+    background-position: -732px -20px;
+}
+
+.page-wrapper {
+    width: 1090px;
+    white-space: nowrap;
+    overflow-y: scroll;
+}
+
+.page {
+    font-size: 34px;
+    line-height: 48px;
+    display: none;
+}
+
+.active {
+    display: block;
+}
